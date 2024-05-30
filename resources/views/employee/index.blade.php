@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow-sm">
-                    <div class="card-header bg-secondary text-white">
+                    <div class="card-header bg-primary text-white">
                         <h4 class="mb-0">Register Employee</h4>
                     </div>
                     <div class="card-body bg-light">
@@ -33,14 +33,14 @@
                                 
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-secondary btn-block">Register</button>
+                                <button type="submit" class="btn btn-primary btn-block">Register</button>
                             </div>
                         </form>
                     </div>
                 </div>
 
                 <div class="card mt-5 shadow-sm">
-                    <div class="card-header bg-secondary text-white">
+                    <div class="card-header bg-primary text-white">
                         <h4 class="mb-0">Employee List</h4>
                     </div>
                     <div class="card-body bg-light">
@@ -64,7 +64,7 @@
                                     <td>{{ $employee->DOB }}</td>
                                     <td>{{ $employee->phone }}</td>
                                     <td>
-                                        <a href="{{ route('employee.edit', $employee->id) }}" class="btn btn-success btn-sm">
+                                        <a href="{{ route('employee.edit', $employee->id) }}" class="btn btn-primary btn-sm">
                                             <i class="fa fa-pencil-square-o"></i> Edit
                                         </a>
                                         <form action="{{ route('employee.destroy', $employee->id) }}" method="POST" style="display:inline">
