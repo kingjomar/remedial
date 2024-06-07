@@ -4,7 +4,7 @@
 
     <div class="container">
 
-        <h3 align="center" class="mt-5">Employee Management</h3>
+        <h3 align="center" class="mt-5">Employees Management</h3>
 
         <div class="row">
             <div class="col-md-2">
