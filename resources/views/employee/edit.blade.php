@@ -12,18 +12,18 @@
             <div class="col-md-8">
 
             <div class="form-area">
-                <form method="POST" action="{{ route('employee.index', $employee->id) }}">
+                <form method="POST" action="{{ route('employee.update', $employee->id) }}">
                 {!! csrf_field() !!}
                   @method("post")
                     <div class="row">
                         <div class="col-md-6">
                             <label>Student Name</label>
-                            <input type="text" class="form-control" name="emp_name" value="{{ $employee->first_name }}">
-                            <input type="text" class="form-control" name="emp_name" value="{{ $employee->last_name }}">
+                            <input type="text" class="form-control" name="first_name" value="{{ $employee->first_name }}">
+                            <input type="text" class="form-control" name="last_name" value="{{ $employee->last_name }}">
                         </div>
                         <div class="col-md-6">
                             <label>Student DOB</label>
-                            <input type="date" class="form-control" name="dob" value="{{ $employee->dob }}">
+                            <input type="date" class="form-control" name="DOB" value="{{ $employee->DOB }}">
                         </div>
                     </div>
                     <div class="row">
