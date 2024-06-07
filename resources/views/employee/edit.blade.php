@@ -14,7 +14,7 @@
             <div class="form-area">
                 <form method="POST" action="{{ route('employee.index', $employee->id) }}">
                 {!! csrf_field() !!}
-                  @method("PATCH")
+                  @method("post")
                     <div class="row">
                         <div class="col-md-6">
                             <label>Student Name</label>

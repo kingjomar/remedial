@@ -16,7 +16,7 @@ class employeemanagement extends Controller
         return view('employee.index', compact('employees'));
     }
 
-    public function store(Request $request)
+    public function store(Request $request) 
     {
         // Validate the request input
         $this->validateInput($request);
@@ -90,4 +90,9 @@ class employeemanagement extends Controller
     {
         return $request->only($keys);
     }
+    public function show()
+    {
+        return view('auth.profile');
+    }
+
 }

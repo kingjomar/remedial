@@ -33,7 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::view('about', 'about')->name('about');
 
     Route::get('employee/{id}/edit', [employeemanagement::class, 'edit'])->name('employee.edit');
-    Route::patch('employee/{id}', [employeemanagement::class, 'update'])->name('employee.update');
+    Route::post('employee/{id}', [employeemanagement::class, 'update'])->name('employee.update');
     Route::delete('employee/{id}', [employeemanagement::class, 'destroy'])->name('employee.destroy');
     Route::get('/employee', [employeemanagement::class, 'index'])->name('employee.index');
     Route::post('/employee', [employeemanagement::class, 'store'])->name('employee.store');
