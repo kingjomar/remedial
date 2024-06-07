@@ -7,7 +7,7 @@
         <div align="center" class="row justify-content-center">
             <div class="col-md-8">
                 <div ali class="card shadow-sm">
-                    <div class=" bg-custom bg-primary text-white">
+                    <div class=" bg-custom bg-custom bg-red text-white">
                         <h4 align="center" class="mt-2">Register Employee</h4>
                     </div>
                     <div align="center" class="card-body bg-gray">
@@ -33,7 +33,7 @@
                                 
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-custom bg-green">Register</button>
+                                <button type="submit" class="btn btn-custom bg-red">Register</button>
                             </div>
                         </form>
                     </div>
