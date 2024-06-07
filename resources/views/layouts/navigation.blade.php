@@ -15,7 +15,7 @@
                 <a href="{{ route('home') }}" class="nav-link">
                     <i class="nav-icon fas fa-th"></i>
                     <p>
-                        {{ __('BSIT_3A') }}
+                        {{ __('Dashboard') }}
                     </p>
                 </a>
             </li>

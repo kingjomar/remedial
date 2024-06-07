@@ -3,37 +3,37 @@
 
 @section('content')
     <div class="container">
-        <h3 align="center" class="mt-5">Employee Management</h3>
-        <div class="row justify-content-center">
+        <h3 align="center" class="mb-5 ">Employee Management</h3>
+        <div align="center" class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-custom bg-primary text-white">
-                        <h4 class="mb-0">Register Employee</h4>
+                <div ali class="card shadow-sm">
+                    <div class=" bg-custom bg-primary text-white">
+                        <h4 align="center" class="mt-2">Register Employee</h4>
                     </div>
-                    <div class="card-body bg-light">
+                    <div align="center" class="card-body bg-gray">
                         <form method="POST" action="{{ route('employee.store') }}">
                             @csrf
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
+                            <div align="center" class="form-row">
+                                <div class="form-group col-md-5">
                                     <label for="first_name">Employee First Name</label>
                                     <input type="text" class="form-control" id="first_name" name="first_name" required>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-5">
                                     <label for="last_name">Employee Last Name</label>
                                     <input type="text" class="form-control" id="last_name" name="last_name" required>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-5">
                                     <label for="DOB">Employee DOB</label>
                                     <input type="date" class="form-control" id="DOB" name="DOB" required>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-5">
                                     <label for="phone">Phone</label>
                                     <input type="text" class="form-control" id="phone" name="phone" required>
                                 </div>
                                 
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-custom bg-green btn-block">Register</button>
+                                <button type="submit" class="btn btn-custom bg-green">Register</button>
                             </div>
                         </form>
                     </div>
@@ -47,7 +47,7 @@
                         <table class="table table-bordered table-striped">
                             <thead class="thead-light">
                               <tr>
-                                <th scope="col">#</th>
+                                <th scope="col">ID</th>
                                 <th scope="col">First Name</th>
                                 <th scope="col">Last Name</th>
                                 <th scope="col">DOB</th>
